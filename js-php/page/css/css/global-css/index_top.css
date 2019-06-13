@@ -1,0 +1,90 @@
+.index_top {
+  height: 125px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-bottom: 2px solid  #ff464e; }
+.index_top .middle {
+  height: 100%; }
+.index_top .middle_top {
+  height: 85px;
+  width: 100%;
+  overflow: hidden; }
+.index_top h1 {
+  width: 210px;
+  height: 56px;
+  float: left;
+  margin-top: 14.5px; }
+.index_top h1 img {
+  width: 100%;
+  height: 100%; }
+.index_top .server {
+  height: 56px;
+  float: left;
+  margin-top: 14.5px;
+  margin-left: 100px; }
+.index_top .server p {
+  float: left;
+  width: 166.66667px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  line-height: 56px; }
+.index_top .server p i {
+  font-size: 30px;
+  float: left;
+  color: red; }
+.index_top .server p a {
+  float: left;
+  margin-left: 20px;
+  font-size: 20px; }
+.index_top .server p a:hover {
+  color: red;
+  cursor: pointer; }
+.index_top .search {
+  width: 250px;
+  height: 40px;
+  float: right;
+  margin-top: 22.5px;
+  margin-right: 20px; }
+.index_top .search p {
+  float: left; }
+.index_top .search p:first-child {
+  width: 188px;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #efefef; }
+.index_top .search p:first-child input {
+  width: 100%;
+  height: 100%;
+  border: none; }
+.index_top .search p:last-child {
+  width: 40px;
+  height: 40px;
+  background-color: #ff464e;
+  line-height: 40px;
+  text-align: center; }
+.index_top .search p:last-child .icon-sousuo {
+  color: #fff; }
+.index_top .search p:last-child:hover {
+  background-color: red;
+  cursor: pointer; }
+.index_top .nav {
+  width: 100%;
+  height: 40px; }
+.index_top .nav a {
+  float: left;
+  height: 100%;
+  padding: 0 20px;
+  line-height: 40px;
+  color: black;
+  font-size: 16px;
+  text-align: center; }
+.index_top .nav a.selected {
+  background-color: #ff464e;
+  color: #fff;
+  height: 38px;
+  border: 1px solid #ff464e;
+  border-radius: 8px 8px 0 0; }
+
+/*# sourceMappingURL=index_top.css.map */

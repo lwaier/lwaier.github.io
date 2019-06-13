@@ -1,0 +1,17 @@
+/* *********************************初始化 ************************/
+@charset "utf-8";
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,input,textarea{margin: 0;padding: 0;}
+a{text-decoration: none; color: inherit;cursor: pointer;}
+li{list-style: none;}
+img{vertical-align: middle; border:0;}
+input,textarea{outline: none;background:none;}
+input,textarea,select{color: inherit;font-size: inherit;font-family: inherit;}
+textarea{resize: none;}
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer}
+
+/***************************************公共样式*********************************/
+.middle{width: 1200px; margin-left: auto; margin-right: auto;}
+.dotted3{white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
+html{font-size: 12px;font-family: "微软雅黑","宋体",Arial; color: #666;}
+.clear:after{content:"";display: block;height: 0;overflow: hidden;visibility: hidden;clear: both;}
+.clear{zoom: 1;}

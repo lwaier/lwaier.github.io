@@ -1,0 +1,194 @@
+body {
+  background-color: #f3f3f3; }
+  body .login_content {
+    margin-top: 20px; }
+    body .login_content .middle {
+      height: 530px;
+      background-color: white; }
+      body .login_content .middle .shang {
+        width: 100%;
+        height: 65px;
+        line-height: 65px;
+        box-sizing: border-box;
+        padding: 0 5%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        body .login_content .middle .shang span {
+          float: left; }
+        body .login_content .middle .shang span:nth-child(1) {
+          margin-right: 30px;
+          color: #ff464e;
+          font-size: 18px; }
+        body .login_content .middle .shang span:nth-child(3) {
+          float: right;
+          font-size: 16px;
+          color: #9da8fb;
+          cursor: pointer; }
+        body .login_content .middle .shang span:nth-child(3):hover {
+          color: #5568f9; }
+        body .login_content .middle .shang span:nth-child(4) {
+          float: right;
+          margin-right: 30px; }
+      body .login_content .middle .zhong {
+        width: 100%;
+        height: 400px;
+        box-sizing: border-box;
+        padding: 0px 10%; }
+        body .login_content .middle .zhong .zhongLfte {
+          width: 45%;
+          height: 100%;
+          float: left;
+          margin-right: 10%; }
+          body .login_content .middle .zhong .zhongLfte p {
+            width: 80%;
+            height: 38px;
+            line-height: 38px; }
+            body .login_content .middle .zhong .zhongLfte p span:first-child {
+              float: left;
+              width: 30%;
+              font-size: 16px; }
+            body .login_content .middle .zhong .zhongLfte p span:last-child {
+              float: left;
+              width: 60%;
+              height: 100%;
+              padding: 0 2%;
+              border: 1px solid #666; }
+            body .login_content .middle .zhong .zhongLfte p input {
+              border: none;
+              width: 100%;
+              height: 100%; }
+          body .login_content .middle .zhong .zhongLfte .yanzhengma {
+            width: 80%;
+            height: 38px;
+            line-height: 38px; }
+            body .login_content .middle .zhong .zhongLfte .yanzhengma span:first-child {
+              float: left;
+              width: 30%;
+              font-size: 16px; }
+            body .login_content .middle .zhong .zhongLfte .yanzhengma span:nth-child(2) {
+              float: left;
+              width: 30%;
+              font-size: 16px;
+              border: 1px solid #666;
+              box-sizing: border-box;
+              padding: 0 2%; }
+            body .login_content .middle .zhong .zhongLfte .yanzhengma span:last-child {
+              float: left;
+              width: 30%;
+              font-size: 16px;
+              padding: 0;
+              margin-left: 4%;
+              color: white;
+              text-align: center;
+              background-color: #666; }
+          body .login_content .middle .zhong .zhongLfte p:nth-child(1) {
+            margin-top: 50px; }
+          body .login_content .middle .zhong .zhongLfte p:nth-child(2) {
+            height: 20px;
+            line-height: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: none;
+            padding-left: 80px; }
+          body .login_content .middle .zhong .zhongLfte p:nth-child(4) {
+            line-height: 20px;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: none;
+            padding-left: 80px; }
+            body .login_content .middle .zhong .zhongLfte p:nth-child(4) .pwdPowruo {
+              display: inline-block;
+              width: 30px;
+              height: 10px;
+              background-color: #cdcdcd;
+              border: 1px solid #666;
+              margin-right: 1px; }
+            body .login_content .middle .zhong .zhongLfte p:nth-child(4) .pwdPowZhong {
+              display: inline-block;
+              width: 30px;
+              height: 10px;
+              background-color: yellow;
+              border: 1px solid #666;
+              margin-right: 1px; }
+            body .login_content .middle .zhong .zhongLfte p:nth-child(4) .pwdPowQiang {
+              display: inline-block;
+              width: 30px;
+              height: 10px;
+              background-color: #79ff79;
+              margin-right: 1px;
+              border: 1px solid #ff464e; }
+            body .login_content .middle .zhong .zhongLfte p:nth-child(4) strong {
+              margin-left: 10px; }
+          body .login_content .middle .zhong .zhongLfte p:nth-child(6) {
+            height: 20px;
+            line-height: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: none;
+            padding-left: 80px; }
+          body .login_content .middle .zhong .zhongLfte p:nth-child(8) {
+            height: 20px;
+            line-height: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: none;
+            padding-left: 80px; }
+          body .login_content .middle .zhong .zhongLfte #userRegister span {
+            margin-left: 30%;
+            background-color: #ff464e;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px; }
+          body .login_content .middle .zhong .zhongLfte h3 {
+            float: left;
+            margin-top: 20px; }
+            body .login_content .middle .zhong .zhongLfte h3 input {
+              float: left;
+              width: 14px;
+              height: 14px;
+              margin-top: 3px; }
+            body .login_content .middle .zhong .zhongLfte h3 a {
+              float: left; }
+            body .login_content .middle .zhong .zhongLfte h3 a:hover {
+              text-decoration: underline; }
+        body .login_content .middle .zhong .zhongRight {
+          width: 45%;
+          height: 100%;
+          float: left;
+          line-height: 400px; }
+          body .login_content .middle .zhong .zhongRight img {
+            width: 100%; }
+          body .login_content .middle .zhong .zhongRight .qitalogin {
+            height: 40px;
+            width: 80%; }
+            body .login_content .middle .zhong .zhongRight .qitalogin h3 {
+              float: left;
+              width: 100%;
+              height: 100%; }
+            body .login_content .middle .zhong .zhongRight .qitalogin h3:first-child span {
+              width: 50%;
+              height: 40px;
+              float: left;
+              text-align: center;
+              line-height: 40px; }
+            body .login_content .middle .zhong .zhongRight .qitalogin h3:first-child .icon-weibo {
+              font-size: 30px;
+              color: #f7757b; }
+            body .login_content .middle .zhong .zhongRight .qitalogin h3:first-child .icon-weixin {
+              font-size: 30px;
+              color: #93d62b; }
+            body .login_content .middle .zhong .zhongRight .qitalogin h3:first-child .icon-taobao {
+              font-size: 30px;
+              color: #d05454; }
+            body .login_content .middle .zhong .zhongRight .qitalogin h3:first-child i {
+              opacity: 0.5;
+              filter: alpha(opacity=50); }
+            body .login_content .middle .zhong .zhongRight .qitalogin h3:first-child i:hover {
+              opacity: 1;
+              filter: alpha(opacity=100); }
+
+/*# sourceMappingURL=register.css.map */

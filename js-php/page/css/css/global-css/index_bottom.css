@@ -1,0 +1,24 @@
+.index_bottom {
+  margin-top: 10px;
+  height: 30px;
+  padding: 15px 0px; }
+  .index_bottom .middle {
+    height: 30px; }
+    .index_bottom .middle a {
+      float: left;
+      margin: 0 12px;
+      height: 14px;
+      line-height: 14px;
+      margin-top: 8px;
+      font-size: 14px; }
+    .index_bottom .middle a:first-child {
+      border-right: 1px solid #666;
+      padding: 0px 10px;
+      font-size: 16px;
+      color: #c5141d; }
+    .index_bottom .middle a:last-child {
+      color: #77fd77; }
+    .index_bottom .middle a:hover {
+      color: #ff464e; }
+
+/*# sourceMappingURL=index_bottom.css.map */

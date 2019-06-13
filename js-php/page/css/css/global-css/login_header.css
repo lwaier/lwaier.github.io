@@ -1,0 +1,42 @@
+.middle {
+  width: 980px; }
+
+.login_header {
+  border-bottom: 5px solid #ff464e;
+  background-color: white;}
+.login_header .middle {
+  height: 78px;
+  overflow: hidden; }
+.login_header h1 {
+  width: 210px;
+  height: 56px;
+  float: left;
+  margin-top: 11px;}
+.login_header h1 img {
+  width: 100%;
+  height: 100%; }
+.login_header .server {
+  height: 56px;
+  float: right;
+  margin-top: 11px;
+  margin-right: 100px; }
+.login_header .server p {
+  float: left;
+  width: 166.66667px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  line-height: 56px; }
+.login_header .server p i {
+  font-size: 30px;
+  float: left;
+  color: red; }
+.login_header .server p a {
+  float: left;
+  margin-left: 20px;
+  font-size: 20px; }
+.login_header .server p a:hover {
+  color: red;
+  cursor: pointer; }
+
+/*# sourceMappingURL=login_header.css.map */

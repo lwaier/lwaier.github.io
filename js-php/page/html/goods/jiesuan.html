@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1088022_cjcutk7yrdu.css">
+    <link rel="stylesheet" type="text/css" href="../../css/css/global-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/css/global-css/index_header.css">
+    <link rel="stylesheet" type="text/css" href="../../css/css/global-css/login_header.css">
+    <link rel="stylesheet" type="text/css" href="../../css/css/goods/jiesuan.css">
+</head>
+<body>
+        <div class="index_header_top"></div><!--公共头部-->
+        <div class="login_header"></div><!--公共登录头部-->
+        <div class="jiesuan_center">
+            <div class="middle">
+                <div class="dizhi">
+                    <h3>选择收货地址</h3>
+                    <div class="dizhishis">
+                        <ul class="dizhisu">
+                            <!-- <li class="selected">
+                                <p>李伟收</p>
+                                <p>湖北省 武汉市 关山大道</p>
+                                <p>13185031290 <span class="phonexg">修改</span></p>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li> -->
+                            <!-- <li id="addDiZhi">+ 新增地址</li> -->
+                        </ul>
+                        <div class="xinzeng">
+                            <ul>
+                                <li><p>收货人:</p> <p><input type="text" id="shouHuoR" placeholder="只能输入汉字,数字或字母.长度不超过16字"></p><p id="shouHuoRT"></p></li>
+                                <li><p>手机号:</p> <p><input type="text" id="shouHuoPhone" placeholder="我想偷存你的手机号"></p><p id="shouHuoPhoneT"></p></li>
+                                <li><p>所在地区:</p> <p id="diqu">
+                                        <select id="shen">
+                                                <option value="">请选择省份或直辖市</option>
+                                            </select>
+                                            <select id="shi">
+                                                <option value="">请选择城市</option>
+                                            </select>
+                                            <select id="qu">
+                                                <option value="">请选择区县</option>
+                                            </select>
+                                </li>
+                                <li><p>街道地址:</p> <p><input type="text" id="shouHuoJieDao" placeholder="我想偷存你的手机号"></p><p id="shouHuoJieDaoT"></p></li>
+                                <li><input type="checkbox" id="moren"><label for="moren">设置为默认收货地址</label></li>
+                                <li><span id="baoCun">保存</span><span id="quXiao">取消</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="zhifu">
+                    <h3>请选择支付方式</h3>
+                    <p>
+                        <input type="radio" name="zhifu"><span><img src="../../images/jiesuan/Alipay.jpg" alt=""></span>
+                        <input type="radio" name="zhifu"><span><img src="../../images/jiesuan/weixin.jpg" alt=""></span>
+                    </p>
+                </div>
+                <div class="dingdan">
+                    <h3>确认订单信息</h3>
+                    <div class="dingdanxianshi">
+                        <div class="dingdantop">
+                            <ul>
+                                <li>商品信息</li>
+                                <li>规格</li>
+                                <li>单价(元)</li>
+                                <li>数量</li>
+                                <li>小计</li>
+                            </ul>
+                        </div>
+                        <div class="dingdanbottom">
+                            <!-- <ul>
+                                <li>
+                                    <img src="../../images/goodinfoimg/goodimg1.jpg" alt="">
+                                    哈哈大哈哈和卡号
+                                </li>
+                                <li>XL 紫红色</li>
+                                <li>59</li>
+                                <li>1</li>
+                                <li>59</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div id="querenzhifu" class="clear">
+                    <h3>结算操作:<em id="zongji">合计：</em> <span>tip:单击订单中的商品图片可以查看该商品的详情，点击订单商品中空白处可以将该商品返回至购物车,在小计最右侧鼠标点击拖拽横移可以删除该商品哦</span></h3>
+                    <p class="dizhiP"> 
+                        <!-- <span>收货信息：</span>
+                        <span>收货人</span>
+                        <span>dada</span>
+                        <span>adadada</span> -->
+                    </p>
+                    <p class="caozuoP">
+                        <span id="fanhui">全返购物车</span>
+                        <span id="quxiao">取消该订单</span>
+                        <span id="queren">确认支付</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    
+</body>
+<script src="../../js/global-js/13-jquery-1.11.3.js"></script>
+<script src="../../js/goods/jiesuan.js" type="module"></script>
+</html>

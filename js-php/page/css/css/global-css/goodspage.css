@@ -1,0 +1,29 @@
+*{margin: 0;padding: 0;list-style: none;}
+.page{margin: 50px auto;color: white;
+height: 30px;text-align: center} 
+.page #prevPage{float: left;width: 70px;background-color: #ff464e;
+height: 30px;line-height: 30px;font-size: 12px;text-align: center;
+border-radius: 50px;cursor: pointer;}
+.page #nextPage{    float: left;
+    width: 70px;
+    background-color: #ff464e;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 50px;cursor: pointer;}
+.page #prevPage.selectd{background-color: #a58389;}
+.page #nextPage.selectd{background-color: #a58389;}
+.page #contentPage{float: left;height: 40px;}
+.page #contentPage li{width: 25px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: pink;
+    float: left;
+    margin-left: 10px;
+    border-radius:20px;
+    cursor: pointer;
+}
+.page #contentPage li.selectd{background-color: #ff464e;}
