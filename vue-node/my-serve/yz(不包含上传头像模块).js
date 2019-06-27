@@ -656,12 +656,28 @@ router.post('/addressupdate',(req,res,next)=>{
             setError(err,res,db)
             if(result){
                 let arr = result.address
-                let arrnew = arr.map((value,index)=>{
-                    if(index==xiabiao){
-                        value=objnew
-                    }
-                    return value
-                })
+                let arrnew = []
+                if(objnew.moren){
+                    //如果设置为默认 将其他的都改为false
+                    let arrnewtwo = arr.map((value,index)=>{
+                        value.moren=false
+                        return value
+                    })
+                    arrnew=arrnewtwo.map((value,index)=>{
+                        if(index==xiabiao){
+                            value=objnew
+                        }
+                        return value
+                    })
+                }else{
+                    arrnew = arr.map((value,index)=>{
+                        if(index==xiabiao){
+                            value=objnew
+                        }
+                        return value
+                    })
+                }
+                
                 //更新
                 db.collection('address').update({
                     username
@@ -847,107 +863,6 @@ router.post('/dingdanment',(req,res,next)=>{
 
 })
 
-
-
-//创建上传头像的服务器
-const multer = require('multer');
-var storage = multer.diskStorage({
-    //将上传的文件存储在指定的位置（不存在的话需要手动创建）
-    destination: function (req, file, cb) {
-        cb(null, './public/avatar')
-    },
-    //将上传的文件做名称的更改
-    filename: function (req, file, cb) {
-        var fileformat = (file.originalname).split('.');
-        console.log(file);
-        cb(null, Date.now()+file.originalname);
-    }
-})
-//创建multer对象
-var upload = multer({ storage: storage })
-const avatarUpload = upload.any();
-
-//上传头像的接口
-router.post('/uploadimg',avatarUpload,(req,res,next)=>{
-    var username =aesDecrypt(req.session.username,keys)
-    var imgUrl = req.files[0].path;
-    conn((err,db)=>{
-        setError(err,res,db)
-        
-        db.collection('usertouxiang').findOne({
-            username
-        },(err,result)=>{
-            setError(err,res,db)
-            if(result){
-                //如果结果存在就更新
-                db.collection('usertouxiang').update({
-                    username
-                },{
-                    $set:{
-                        avatar:imgUrl
-                    }
-                },(err,result)=>{
-                    setError(err,res,db)
-                    res.json({
-                        code:200,
-                        msg:'上传头像成功',
-                        type:1,
-                        result:imgUrl
-                    })
-                })
-
-            }else{
-                //如果结果不存在就插入
-                db.collection('usertouxiang').insert({
-                    username,
-                    avatar:imgUrl
-                },(err,result)=>{
-                    setError(err,res,db)
-                    res.json({
-                        code:200,
-                        msg:'第一次上传头像成功',
-                        type:1,
-                        result:imgUrl
-                    })
-                })
-            }
-        })
-
-
-
-        
-    })
-})
-
-
-//查询头像接口
-router.post('/gettouxiang',(req,res,next)=>{
-    var username =aesDecrypt(req.session.username,keys)
-    console.log(username)
-    conn((err,db)=>{
-        setError(err,res,db)
-        db.collection('usertouxiang').findOne({
-            username
-        },(err,result)=>{
-            setError(err,res,db)
-            if(result){
-                res.json({
-                    code:200,
-                    msg:'获取头像成功',
-                    type:1,
-                    result:result.avatar
-                })
-            }else{
-                res.json({
-                    code:200,
-                    msg:'该用户还没有头像',
-                    type:0,
-                })
-            }
-            db.close()
-        })
-    })
-})
 
 
 module.exports = router

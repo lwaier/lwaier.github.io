@@ -8,19 +8,9 @@
         </p>
         <h2 v-if="loginFlag">
           <!-- 这里是头像 -->
-          <p @click="pimgFn">
-            <img :src="imgSrc" alt="">
-          </p>
-          <input type="file" 
-          accept="image/*" 
-          class="inputimg"
-          @change="inputimgFn"
-          ref="inputimg">
+          <p></p>
         </h2>
         <h3>
-          <em class="shangchuan"
-          v-if="imgtipFlag"
-          >可点击头像进行上传头像操作</em>
           <span @click="$router.push({name:'login'})" v-if="!loginFlag">登录</span>
           <span v-else @click="zhuxiao">退出登录</span>
           <!-- 此处有逻辑 如果已经登录 需要显示已登录 -->
@@ -67,16 +57,12 @@ import {mapState} from 'vuex'
 
 Vue.use(Toast);
 
-import touxiang from './../assets/logo.png'
-
 
 export default {
   data(){
     return{
       loginFlag:false,
-      username:'',
-      imgSrc:'',
-      imgtipFlag:true
+      username:''
     }
   },
   components: {
@@ -95,30 +81,6 @@ export default {
     ])
   },
   methods:{
-    pimgFn(){
-      this.$refs.inputimg.click()
-    },
-    inputimgFn(){
-      let img = this.$refs.inputimg.files[0]
-      const Data = new FormData()
-      Data.append('avatar',img)
-      this.$axios({
-          url:'/vue/yz/uploadimg',
-          method:'POST',
-          contentType:false,
-          processData:false,
-          data:Data
-      }).then(res=>{
-
-          if(res.data.type==1){
-                let imgSrc = res.data.result
-                imgSrc=imgSrc.replace(/public/,'http://47.100.234.162:5200')
-                this.imgSrc=imgSrc
-                this.imgtipFlag=false
-          }
-
-      })
-    },
     zhuxiao(){
       this.$axios.post("/vue/yz/zhuxiao").then((res)=>{
         if(res.data.type==1){
@@ -134,25 +96,10 @@ export default {
   mounted(){
         if(window.sessionStorage.userinfo){
             this.loginFlag=true
-            this.$axios({
-              url:'/vue/yz/gettouxiang',
-              method:'POST',
-            }).then(res=>{
-              if(res.data.type==1){
-                let imgSrc = res.data.result
-                imgSrc=imgSrc.replace(/public/,'http://47.100.234.162:5200')
-                this.imgSrc=imgSrc
-                this.imgtipFlag=false
-              }else{
-                this.imgSrc=touxiang
-                this.imgtipFlag=true
-              }
-            })
         }
         if(sessionStorage.userinfo){
           this.username = JSON.parse(sessionStorage.userinfo).username
         }
-        
   }
 };
 </script>
@@ -205,22 +152,13 @@ export default {
           height: 1.5rem;
           background: white;
           border-radius: 50%;
-          display: inline-block;
-          overflow: hidden;
-          img{
-            width: 100%;
-            height:100%;
-          }
-      }
-      .inputimg{
-        display: none
+          display: inline-block
       }
     }
     h3{
       height: .5rem;
       margin-top: .6rem;
       text-align: center;
-      position: relative;
       span{
         display: inline-block;
         text-align: center;
@@ -228,15 +166,6 @@ export default {
         text-align: center;
         line-height: .5rem;
         height: 100%;
-      }
-      .shangchuan{
-        position: absolute;
-        left: 0;
-        top: -.4rem;
-        right: 0;
-        margin: auto;
-        font-size: .12rem;
-        font-style: normal;
       }
     }
 }
