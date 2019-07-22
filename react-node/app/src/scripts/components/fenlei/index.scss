@@ -1,0 +1,25 @@
+.topdiv{
+    width: 2.5rem;
+    height:.8rem;
+    background-color:transparent;
+    position: relative;
+    font-size: 14px;
+    .topp{
+        width: 100%;
+        height: 100%;
+        text-align:center;
+        line-height: .8rem;
+    }
+    .childrendiv{
+        position: absolute;
+        top: .8rem;
+        left: 0;
+        min-width: 100%;
+        .childrenp{
+            height: .8rem;
+            text-align: center;
+            line-height: .8rem;
+            background-color: rgba(0,0,0,.8);
+        }
+    }
+}

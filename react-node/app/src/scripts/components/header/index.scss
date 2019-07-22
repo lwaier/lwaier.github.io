@@ -1,0 +1,24 @@
+.pusernamexingxing{
+    text-align: center;
+    margin-top: .6rem;
+}
+.topdivmine{
+    width:100%;
+    height:6rem;
+    background:#42ce73;
+    overflow:hidden;
+    color: white;
+    .topimgmine{
+        width:2.5rem;
+        height:2.5rem;
+        border-radius:50%;
+        margin:1rem auto;
+        margin-bottom:0;
+        overflow: hidden;
+        border: 1px solid white;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
